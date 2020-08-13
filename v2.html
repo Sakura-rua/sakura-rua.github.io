@@ -21,8 +21,8 @@
 				<nav>
 					<ul>
 						<li><a href="index.html" class="button">Home</a></li>
-                        <li><a href="v1.html" class="button" class="active">SSH</a></li>
-                        <li><a href="v2.html" class="button">speedtest-cli</a></li>
+                        <li><a href="v1.html" class="button">SSH</a></li>
+                        <li><a href="v2.html" class="button" class="active"">speedtest-cli</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -38,15 +38,12 @@
 							<!-- Text -->
 								<section>
                                     <h2>Tutorials</h2>
-                                    <b><a href="https://blog.csdn.net/datadev_sh/article/details/79593360" class="button">在用SSH工具XShell连接谷歌云 root用户或普通用户</a></b>
+                                    <b><a href="https://www.howtoing.com/check-internet-speed-with-speedtest-cli-on-ubuntu" class="button">在Debian和Ubuntu上使用speedtest-cli检查Internet速度</a></b>
                                     <hr />
-                                    <b>修改SSH配置文件</b>
-                                    <b><pre><code>vi /etc/ssh/sshd_config<br>PermitRootLogin yes //默认为no，需要开启root用户访问改为yes<br>PasswordAuthentication yes //默认为no，改为yes开启密码登陆</code></pre></b>
-                                    <b>设置密码</b>
-                                    <b><code>passwd</code></b>
-                                    <br>
-                                    <br><b>重启SSH服务使修改生效</b>
-                                    <b><code><pre>/etc/init.d/ssh restart</pre></code></b>         
+                                    <b>安装</b>
+                                    <b><pre><code>pip install speedtest-cli</code></pre></b>
+                                    <b>使用</b>
+                                    <b><pre><code>speedtest-cli<br>speedtest-cli --bytes<br>speedtest-cli --share<br>speedtest-cli --simple</code></pre></b>          
 									<hr />
 								</section>
 
