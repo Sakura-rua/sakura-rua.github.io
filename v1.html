@@ -41,9 +41,13 @@
                                     <b><a href="https://blog.csdn.net/datadev_sh/article/details/79593360" class="button">在用SSH工具XShell连接谷歌云 root用户或普通用户</a></b>
                                     <hr />
                                     <b>修改SSH配置文件</b>
-                                    <b><code>vi /etc/ssh/sshd_config<br>PermitRootLogin yes //默认为no，需要开启root用户访问改为yes<br>PasswordAuthentication yes //默认为no，改为yes开启密码登陆</code></b>
-                                    <b>设置密码</b>
-                                    <b><code>passwd</code></b>
+                                    <b>
+                                    <br><code>vi /etc/ssh/sshd_config</code>
+                                    <br><code>PermitRootLogin yes</code> <p>//默认为no，需要开启root用户访问改为yes</p>
+                                    <br><code>PasswordAuthentication yes</code> <p>//默认为no，改为yes开启密码登陆</p>
+                                    </b>
+                                    <br><b>设置密码</b>
+                                    <br><b><code>passwd</code></b>
                                     <br>
                                     <br><b>重启SSH服务使修改生效</b>
                                     <br><b><code>/etc/init.d/ssh restart</code></b>         
