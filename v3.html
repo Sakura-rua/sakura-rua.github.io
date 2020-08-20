@@ -48,7 +48,7 @@
 									<pre><code><b>/etc/init.d/ss-fly start</b></code>//启动<b><code>/etc/init.d/ss-fly stop</code></b>//停止<b><code>/etc/init.d/ss-fly restart</b></code>//重启<b><code>/etc/init.d/ss-fly status</code></b>//状态<b><code>ss-fly/ss-fly.sh -sslink</code></b>//查看ss链接<b><code>vim /etc/shadowsocks.json</code></b>//修改配置文件<b><code>ss-fly/ss-fly.sh -uninstall</code></b>//卸载SS</pre>
 									<hr />
 									<h2> 一键开启BBR加速(KVM)</h2>
-									<pre><b><code>ss-fly/ss-fly.sh -bbr</code></b>//装完后需要重启系统//输入<code>reboot</code>命令重启<b><code>sysctl net.ipv4.tcp_available_congestion_control</code></b>判断BBR加速有没有开启成功<b><code>net.ipv4.tcp_available_congestion_control = bbr cubic reno</code></b>//如果返回值后面有bbr则说明开启成功</pre>
+									<pre><b><code>ss-fly/ss-fly.sh -bbr</code></b>//装完后需要重启系统//输入\<code>reboot\</code>命令重启<b><code>sysctl net.ipv4.tcp_available_congestion_control</code></b>判断BBR加速有没有开启成功<b><code>net.ipv4.tcp_available_congestion_control = bbr cubic reno</code></b>//如果返回值后面有bbr则说明开启成功</pre>
 									<hr />
 									<h2> BBRPlus(OpenVZ)</h2>
 									<b><a href="https://github.com/mzz2017/lkl-haproxy" class="button">BBRPLUS lkl-haproxy</a></b>
