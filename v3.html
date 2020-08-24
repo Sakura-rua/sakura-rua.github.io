@@ -47,9 +47,11 @@
 									<br><pre><b><code>yum -y install git</code></b>//安装Git//Centos<b><code>apt-get update && apt-get -y install git</code></b>//Debian<b><code>git clone https://github.com/suniceman/ss-fly</code></b>//一键搭建SS脚本<b><code>ss-fly/ss-fly.sh -i password port</code></b>//运行搭建SS//password和port自定义</pre>
 									<b>相关操作</b>
 									<pre><code><b>/etc/init.d/ss-fly start</b></code>//启动<b><code>/etc/init.d/ss-fly stop</code></b>//停止<b><code>/etc/init.d/ss-fly restart</b></code>//重启<b><code>/etc/init.d/ss-fly status</code></b>//状态<b><code>ss-fly/ss-fly.sh -sslink</code></b>//查看ss链接<b><code>vim /etc/shadowsocks.json</code></b>//修改配置文件<b><code>ss-fly/ss-fly.sh -uninstall</code></b>//卸载SS</pre>
+									<b> 开启BBR加速</b>
+									<pre><b><code>ss-fly/ss-fly.sh -bbr</code></b>//装完后需要重启系统<b><code>reboot</code></b>//重启<b><code>sysctl net.ipv4.tcp_available_congestion_control</code></b>判断BBR加速有没有开启成功<b><code>net.ipv4.tcp_available_congestion_control = bbr cubic reno</code></b>//如果返回值后面有bbr则说明开启成功</pre>
 									<hr />
 									<h2> 一键开启BBR加速(KVM)</h2>
-									<pre><b><code>ss-fly/ss-fly.sh -bbr</code></b>//装完后需要重启系统<b><code>reboot</code></b>//重启<b><code>sysctl net.ipv4.tcp_available_congestion_control</code></b>判断BBR加速有没有开启成功<b><code>net.ipv4.tcp_available_congestion_control = bbr cubic reno</code></b>//如果返回值后面有bbr则说明开启成功</pre>
+									<pre><b><code>wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh</code></b></pre>
 									<hr />
 									<h2> BBRPlus(OpenVZ)</h2>
 									<b><a href="https://github.com/mzz2017/lkl-haproxy" class="button">BBRPLUS lkl-haproxy</a></b>
